@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommend form</title>
+    <link rel="stylesheet" href="recommend.css">
+</head>
+<body>
+    <section class="recommend-form">
+        <header>Crop Recommendation System</header>
+        <form action="/predict" method="POST" class="form">
+            
+          <div class="column">
+          <div class="input-box">
+            <label>Nitrogen</label>
+            <input type="number" placeholder="Enter amount of Nitrogen" required />
+          </div>
+  
+          <div class="input-box">
+            <label>Phosphorus</label>
+            <input type="number" placeholder="Enter amount of Phosphorus" required />
+          </div>
+
+          <div class="input-box">
+            <label>Potassium</label>
+            <input type="number" placeholder="Enter amount of Potassium" required />
+          </div>
+          </div>
+          <div class="column">
+          <div class="input-box">
+            <label>Rainfall</label>
+            <input type="number" placeholder="Enter amount of Rainfall in mm" required />
+          </div>
+          <div class="input-box">
+            <label>Humidity</label>
+            <input type="number" placeholder="Enter amount of Humidity" required />
+          </div>
+          <div class="input-box">
+            <label>Ph</label>
+            <input type="number" placeholder="Enter the value of Ph of soil" required />
+          </div>
+          </div>
+          <button>Recommend</button>
+        </form>
+        <!--
+        {% if result %}
+        <div class="card bg-dark" style="width: 18rem;">
+          <img src="{{url_for('static', filename='img.jpg')}}" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title">Recommend Crop for cultivation is:</h5>
+          <p class="card-text">{{ result }}</p>
+          </div>
+        </div>
+         {% endif %}
+        -->
+      </section>
+</body>
+</html>
